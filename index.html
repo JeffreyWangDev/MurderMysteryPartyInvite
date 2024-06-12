@@ -10,50 +10,202 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Happy+Monkey&amp;display=swap">
 </head>
 <style>
-    @keyframes fadeIn {0%   {opacity: 0; } 100% {opacity: 1;}}
-    div {
-      width: 70vw;
-      margin: 50px auto;
-      height: 70vw;
-      min-height: 300px;
-      max-height: 700px;
-      min-width: 300px;
-      max-width: 700px;
-      animation: fadeIn 0.5s ease-in-out;
-      cursor: default;
+  
+
+  @keyframes fadeIn {0%   {opacity: 0; } 100% {opacity: 1;}}
+
+  div {
+    width: 70vw;
+    margin: 50px auto;
+    height: 70vw;
+    min-height: 300px;
+    max-height: 700px;
+    min-width: 300px;
+    max-width: 700px;
+    animation: fadeIn 0.5s ease-in-out;
+    cursor: default;
+  }
+  
+  body{
+    cursor: default;
+  }
+  
+  .hovergrow{
+    transition: all .2s ease-in-out; 
+  
+  }
+  .hovergrow:hover{
+    transform: scale3d(1.1,1.1,1);
+  }
+  
+  .happyMonkey{
+    font-family: 'Happy Monkey', sans-serif;
+  }
+  .adamina{
+    font-family: 'Adamina', sans-serif;
+  }
+  .actor{
+    font-family: 'Actor', sans-serif;
+  }
+  .hidden {
+    opacity: 0 !important;
+  }
+  
+  .regText{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .secondPageFirstText{
+    position: absolute;
+    background: #ded3b6;
+    border-style: solid;
+    border-color: #607183;
+    color: #1f1943;
+    --bs-body-color: #433119;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .secondPageSecondText{
+    position: absolute;
+    background: #ded3b6;
+    border-style: solid;
+    border-color: #607183;
+    color: #433119;
+    --bs-body-color: #433119;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    transform: translateX(0px) translateY(-44px) skew(0deg);
+    width: 50vw;
+    padding-bottom: 13px;
+    margin-bottom: -16px;
+    margin-right: -31px;
+  }
+  
+  .secondPageFooter{
+    position: static;
+    overflow: hidden;
+    width: 100%;
+    transform: translateY(0px);
+    overflow-y: hidden;
+    padding-bottom: 0px;
+    height: 115.25px;
+    padding-top: 0px;
+    margin-top: 27px;
+  }
+  
+  .thirdPageFirstText{
+    max-width: 38vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-color: #607183;
+    background: #ded3b6;
+    transform: translateZ(37px);
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-top: -124px;
+  }
+  .thirdPageFirstImage{
+    max-width: 50vw;
+    border-style: solid;
+    border-color: #607183;
+    border-radius: 13px;
+  }
+  .finalLotsOfText{
+    width: 50%;
+    min-width: auto;
+    max-width: none;
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    background: #a5bed9;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-style: dashed;
+    border-radius: 5px;
+  }
+  .finalLotsOfTextBig{
+    font-size: 3vw;
+  }
+  
+  .finalFirstHeading {
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 5vw;
+  }
+  
+  .finalSecondHeading {
+    margin-bottom: 0px;
+    font-size: 2vw;
+  }
+  
+  .finalThirdHeading {
+    font-size: 1.6vw;
+  }
+  
+  .finalImagee{
+    width: 60vw;
+      z-index: -1;
+  }
+  .fivePeopleFirsttext{
+    max-width: 30vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-style: solid;
+    border-color: #607183;
+    background: #ded3b6;
+    transform: translateZ(37px);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -40px;
+    margin-top: 0px;
     }
-    
-    body{
-      cursor: default;
-    }
-    
-    .hovergrow{
-      transition: all .2s ease-in-out; 
-    
-    }
-    .hovergrow:hover{
-      transform: scale3d(1.1,1.1,1);
-    }
-    
-    .happyMonkey{
-      font-family: 'Happy Monkey', sans-serif;
-    }
-    .adamina{
-      font-family: 'Adamina', sans-serif;
-    }
-    .actor{
-      font-family: 'Actor', sans-serif;
-    }
-    .hidden {
-      opacity: 0 !important;
-    }
-    
+  .fivePeopleSecondtext{
+    max-width: 30vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-color: #607183;
+    background: #ded3b6;
+    transform: translateZ(37px);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -40px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .fivePeopleFirstImage{
+    max-width: 50vw;
+    border-style: solid;
+    border-color: #607183;
+    border-radius: 13px;
+  }
+  @media (max-width: 1300px) {
     .regText{
-      font-size: 20px;
-      line-height: 20px;
+      font-size: 15px;
+      line-height: 15px;
+    }
+  
+  }
+  @media (max-width: 900px) {
+    .regText{
+      font-size: 15px;
+      line-height: 15px;
     }
     .secondPageFirstText{
-      position: absolute;
+      position: relative;
       background: #ded3b6;
       border-style: solid;
       border-color: #607183;
@@ -62,9 +214,9 @@
       padding: 10px;
       padding-right: 20px;
       padding-left: 20px;
+      margin-bottom: 40px;
     }
     .secondPageSecondText{
-      position: absolute;
       background: #ded3b6;
       border-style: solid;
       border-color: #607183;
@@ -73,15 +225,14 @@
       padding: 10px;
       padding-right: 20px;
       padding-left: 20px;
-      transform: translateX(0px) translateY(-44px) skew(0deg);
-      width: 50vw;
+      width: 90vw;
       padding-bottom: 13px;
-      margin-bottom: -16px;
-      margin-right: -31px;
+      margin-bottom: -100px;
+      margin-right: auto;
+      margin-left: auto;
     }
-    
     .secondPageFooter{
-      position: static;
+      position: relative;
       overflow: hidden;
       width: 100%;
       transform: translateY(0px);
@@ -89,26 +240,31 @@
       padding-bottom: 0px;
       height: 115.25px;
       padding-top: 0px;
-      margin-top: 27px;
+      margin-top: 120px;
     }
-    
     .thirdPageFirstText{
-      max-width: 38vw;
+      position: relative;
+      max-width: 70vw;
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 10px;
       border-style: solid;
       border-color: #607183;
       background: #ded3b6;
-      transform: translateZ(37px);
       margin-right: auto;
       margin-left: auto;
       padding-top: 10px;
-      margin-bottom: 10px;
-      margin-top: -124px;
+      margin-bottom: -30px;
+      margin-top: 10px;
+    }
+    .thirdPageFirstImage{
+      max-width: 70vw;
+      border-style: solid;
+      border-color: #607183;
+      border-radius: 13px;
     }
     .finalLotsOfText{
-      width: 50%;
+      width: 80%;
       min-width: auto;
       max-width: none;
       height: auto;
@@ -123,134 +279,69 @@
       border-radius: 5px;
     }
     .finalLotsOfTextBig{
-      font-size: 3vw;
+      font-size: 40px;
     }
-    
     .finalFirstHeading {
       margin: auto;
       margin-right: auto;
       margin-left: auto;
-      font-size: 5vw;
+      font-size: 60px;
     }
     
     .finalSecondHeading {
       margin-bottom: 0px;
-      font-size: 2vw;
+      font-size: 20px;
     }
     
     .finalThirdHeading {
-      font-size: 1.6vw;
+      font-size: 16px;
+    }
+    .finalImage{
+      width: 90vw;
+      z-index: -1;
+    }
+    .fivePeopleFirsttext{
+      position: relative;
+      max-width:70vw;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      border-style: solid;
+      border-color: #607183;
+      background: #ded3b6;
+      transform: translateZ(37px);
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      }
+    .fivePeopleSecondtext{
+      position: relative;
+      max-width: 70vw;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      border-style: solid;
+      border-color: #607183;
+      background: #ded3b6;
+      transform: translateZ(37px);
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
     }
     
-    .finalImagee{
-      width: 60vw;
-        z-index: -1;
+    .fivePeopleFirstImage{
+      max-width: 80vw;
+      border-style: solid;
+      border-color: #607183;
+      border-radius: 13px;
     }
-    
-    @media (max-width: 1300px) {
-      .regText{
-        font-size: 15px;
-        line-height: 15px;
-      }
-    
-    }
-    @media (max-width: 900px) {
-      .regText{
-        font-size: 15px;
-        line-height: 15px;
-      }
-      .secondPageFirstText{
-        position: relative;
-        background: #ded3b6;
-        border-style: solid;
-        border-color: #607183;
-        color: #1f1943;
-        --bs-body-color: #433119;
-        padding: 10px;
-        padding-right: 20px;
-        padding-left: 20px;
-        margin-bottom: 40px;
-      }
-      .secondPageSecondText{
-        background: #ded3b6;
-        border-style: solid;
-        border-color: #607183;
-        color: #433119;
-        --bs-body-color: #433119;
-        padding: 10px;
-        padding-right: 20px;
-        padding-left: 20px;
-        width: 50vw;
-        padding-bottom: 13px;
-        margin-bottom: -100px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      .secondPageFooter{
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        transform: translateY(0px);
-        overflow-y: hidden;
-        padding-bottom: 0px;
-        height: 115.25px;
-        padding-top: 0px;
-        margin-top: 120px;
-      }
-      .thirdPageFirstText{
-        position: relative;
-        max-width: 50vw;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        border-style: solid;
-        border-color: #607183;
-        background: #ded3b6;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 10px;
-        margin-bottom: -10px;
-        margin-top: 10px;
-      }
-    
-      .finalLotsOfText{
-        width: 80%;
-        min-width: auto;
-        max-width: none;
-        height: auto;
-        min-height: auto;
-        max-height: none;
-        background: #a5bed9;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        border-style: dashed;
-        border-radius: 5px;
-      }
-      .finalLotsOfTextBig{
-        font-size: 40px;
-      }
-      .finalFirstHeading {
-        margin: auto;
-        margin-right: auto;
-        margin-left: auto;
-        font-size: 60px;
-      }
-      
-      .finalSecondHeading {
-        margin-bottom: 0px;
-        font-size: 20px;
-      }
-      
-      .finalThirdHeading {
-        font-size: 16px;
-      }
-      .finalImage{
-        width: 90vw;
-        z-index: -1;
-      }
-    }
+  }
+  
+
 </style>
 <body id = "body" style="background: #ded3b6;">
 
@@ -260,7 +351,7 @@
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
 <script>
-pages = ['<header class="d-flex justify-content-end" style="height: 10px;padding-bottom: 0px;padding-right: 28px;padding-top: 8px;"> <p class="d-block d-flex justify-content-center align-items-start" style="color: var(--bs-dark-border-subtle);font-size: 30px;padding-left: 14px;">Best Experienced with Audio<br><br><br></p> </header> <div class="hovergrow d-flex justify-content-center align-items-center"> <div class="d-table-cell d-flex align-items-center justify-content-center align-items-center" style="--bs-body-color: #607183;"> <h1 class="text-center d-flex justify-content-center align-items-center" style="width: 70vw;height: 70vw;margin: 0px;background: var(--bs-dark-border-subtle);border-radius: 50%;--bs-body-color: #607183;border-style: none;border-color: #607183;color: #ded3b6;font-size: 10vw;min-width: 300px;min-height: 300px;max-height: 700px;max-width: 700px;" onclick="firstPage()"><br>ENTER HERE<br><br></h1> </div> </div>','<header class="happyMonkey" style="color: #433119;margin: 20px;padding: 5px;margin-top: 37px;"> <h1 id="firstText" class="d-flex justify-content-center align-items-center regText secondPageFirstText"> <br><span style="background-color: transparent;">Welcome, brave souls, to a world where shadows dance in the flickering candlelight, and every whisper carries a secret. </span><br><br></h1> </header> <div class="happyMonkey d-flex justify-content-center align-items-end justify-content-end align-items-end" style="max-width: none;min-height: initial;padding-top: 50px;margin-top: 10px;height: 36vw;margin-bottom: -35px;"> <div style="--bs-body-color: #607183;overflow: hidden;width: 70vw;height: 35vw;min-width: inherit;max-width: inherit;border-style: solid;border-color: #607183;min-height: 0px;"> <img src="https://github.com/JeffreyWangDev/Murder-Mystery-invite/blob/main/assets/img/first_image.png?raw=true" style="width: 100%;" alt="Image of a man sitting at a table"></div> <h1 class = "regText secondPageSecondText" id="secondText"> <span style="color: rgb(31, 25, 67);">You are cordially invited to an evening of deception, suspense, and mystery, where every guest is a suspect and every clue leads deeper into the labyrinth of murder.</span> </h1> </div> <footer class="secondPageFooter"> <h1 class="text-center" style="position: static;transform: translateY(0px);padding-top: 0px;margin-top: 0px;padding-bottom: 0px;font-family: Adamina, serif;"> <span style="color: rgb(75, 86, 146);">WELCOME FRIEND</span></h1> <div class="d-flex justify-content-center align-items-center" style="min-width: auto;max-width: none;max-height: none;min-height: auto;height: 10px;width: 100%;padding-right: 0px;margin: 10px;margin-right: 171px;margin-top: 30px;overflow: visible;"> <h1 id="nextButton" onclick="secondPage()" class="hovergrow border rounded d-flex justify-content-center align-items-center" data-bss-hover-animate="pulse" style="color: #1f1943;background: #606893;margin-bottom: 0px;border-radius: 20px;overflow: visible;font-size: 30px;padding-right: 8px;padding-left: 8px;width: 140px;height: 60px;box-shadow: inset 0px 0px 10px;"> <span style="color: rgb(222, 211, 182);">NEXT</span></h1> </div> </footer>',`<div class="d-flex justify-content-center" style="min-height: auto;max-height: none;max-width: none;min-width: auto;width: 100%;height: 100%;padding-bottom: 0px;margin-top: 40px;margin-bottom: 0px;"> <div class="justify-content-center" style="max-width: none;max-height: none;min-height: inherit;min-width: inherit;width: auto;height: auto;margin-top: 20px;margin-bottom: 20px;font-family: 'Happy Monkey', serif;"> <h1 id = "firstText" class="text-center justify-content-center" style="font-size: 1vw;max-width: 30vw;padding-left: 20px;padding-right: 20px;padding-bottom: 10px;padding-top: 10px;border-style: solid;border-color: #607183;background: #ded3b6;transform: translateZ(37px);margin-right: auto;margin-left: auto;margin-bottom: -40px;margin-top: 0px;"><span style="color: rgb(0, 0, 0); background-color: transparent;">Join us as we embark on a journey into the heart of intrigue, where the line between friend and foe blurs, and the truth is but a flickering candle in the wind.</span></h1><img src="https://github.com/JeffreyWangDev/Murder-Mystery-invite/blob/main/second_image.jpg?raw=true" style="max-width: 50vw;border-style: solid;border-color: #607183;border-radius: 13px;" alt="Image of 5 people sitting around a table"> <h1 id ="secondText" class="text-center justify-content-center" style="font-size: 1vw;max-width: 30vw;padding-left: 20px;padding-right: 20px;padding-bottom: 10px;border-style: solid;border-color: #607183;background: #ded3b6;transform: translateZ(37px);margin-right: auto;margin-left: auto;margin-top: -40px;padding-top: 10px;margin-bottom: 10px;"><span style="color: rgb(0, 0, 0); background-color: transparent;">Will you be the detective who unravels the tangled web of lies? Or will you be ensnared in the intricate machinations of those around you?</span></h1> </div> </div> <div class="justify-content-center" style="width: 100%;min-width: auto;max-width: none;height: 100%;min-height: auto;max-height: none;padding-bottom: 0px;margin-top: 10px;margin-bottom: -22px;"> <h1 onclick="thirdPage()" id = "nextButton" class="hovergrow border rounded d-flex justify-content-center align-items-center" data-bss-hover-animate="pulse" style="color: #1f1943;background: #606893;margin-bottom: 0px;border-radius: 20px;overflow: visible;font-size: 30px;padding-right: 8px;padding-left: 8px;width: 140px;height: 60px;margin-right: auto;margin-left: auto;box-shadow: inset 0px 0px 10px;"><span style="color: rgb(222, 211, 182);">NEXT</span></h1> </div> <div style="position: absolute;width: 1px;height: 50px;min-width: 0px;min-height: 0px;background: #607183;"></div>`,'<div class="d-flex justify-content-center" style="min-height: auto;max-height: none;max-width: none;min-width: auto;width: 100%;height: 100%;padding-bottom: 0px;margin-top: 40px;margin-bottom: 0px;"> <div class="justify-content-center" style="max-width: none;max-height: none;min-height: inherit;min-width: inherit;width: auto;height: auto;margin-top: 20px;margin-bottom: 20px;"> <img src="https://github.com/JeffreyWangDev/Murder-Mystery-invite/blob/main/assets/img/third_image.png?raw=true" style="max-width: 50vw;border-style: solid;border-color: #607183;border-radius: 13px;" alt="Image of 5 people sitting around a table"> <h1 id="firstText" class="thirdPageFirstText regText text-center justify-content-center happyMonkey"> <span style="color: rgb(0, 0, 0); background-color: transparent;">Prepare yourself for an unforgettable evening of mystery and mayhem. The stage is set, the players assembled. The question remains: will you emerge victorious, or will you become just another victim in this deadly game of wits?</span></h1> </div> </div> <div class="justify-content-center" style="width: 100%;min-width: auto;max-width: none;height: 100%;min-height: auto;max-height: none;padding-bottom: 0px;margin-bottom: -22px;margin-top: 48px;"> <h1 onclick="lastPage()" id="nextButton" class="hovergrow border rounded d-flex justify-content-center align-items-center" data-bss-hover-animate="pulse" style="color: #1f1943;background: #606893;margin-bottom: 0px;border-radius: 20px;overflow: visible;font-size: 30px;padding-right: 8px;padding-left: 8px;width: 140px;height: 60px;margin-right: auto;margin-left: auto;box-shadow: inset 0px 0px 10px;"> <span style="color: rgb(222, 211, 182);">NEXT</span></h1> </div>',"<div style='z-index:10;pointer-events: none; position: fixed;background: url(&quot;data:image/png;base64,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&quot;) top / auto repeat;width: 100%;min-width: auto;max-width: none;height: 100%;max-height: none;min-height: auto;overflow: visible;padding-top: 0px;margin-top: -50px;'> </div> <div style='width: 100%;max-width: none;min-width: auto;min-height: auto;max-height: none;height: auto;'> <h1 class='text-center adamina finalFirstHeading'>Name of the event here</h1> <p class='text-center adamina finalSecondHeading'>BMWB'S SENIOR APPRECIATION MURDER MYSTERY PARTY</p> <p class='text-center adamina finalThirdHeading'>July 7 2024</p> <div class='happyMonkey finalLotsOfText'> <h1 class='actor finalLotsOfTextBig'>Dear Detective,</h1> <p>You are cordially invited to an evening of mystery, intrigue, and fine dining at our exclusive Murder Mystery Dinner Party, hosted on [date] at a clandestine location in [city].</p> <p>Step into the shadows of deception and suspense as you join a select group of guests for an unforgettable evening of sleuthing and suspense. As the moon casts its eerie glow over the gathering, prepare to immerse yourself in a world where secrets lurk behind every corner and every guest is a potential suspect.</p> <p>Upon arrival, you will be greeted with a glass of champagne and ushered into a realm where nothing is as it seems. From the moment you step through the door, you'll find yourself entangled in a web of lies, deceit, and hidden agendas.</p> <p>As you mingle with fellow detectives and suspects alike, indulge in a sumptuous feast fit for the most discerning palate. But beware – for amongst the laughter and conversation, a sinister plot is unfolding, and only your keen detective skills can unravel the truth.</p> <p>Throughout the evening, you will have the opportunity to interrogate suspects, examine clues, and piece together the puzzle of a heinous crime. With every revelation and unexpected twist, the tension mounts, leading to a thrilling climax where the culprit will finally be unmasked.</p> <p>So dust off your magnifying glass, sharpen your wits, and prepare for an evening of suspense and surprise at The [Event Name]: A Murder Mystery Dinner Party. Your presence is requested, your detective skills essential, and your evening promises to be anything but ordinary.</p> <p>We eagerly anticipate your RSVP and look forward to seeing you on the night when secrets will be revealed, and justice will prevail.</p> </div> </div> <div style='pointer-events: auto; width: 100%;min-width: auto;max-width: none;height: auto;min-height: auto;max-height: none;background: #8097b1;padding-top: 30px;padding-bottom: 30px;margin-bottom: 0px;padding-left: 0px;padding-right: 0px;'> <h1 class='text-center finalFirstHeading actor' style='color: rgb(105,92,86)'>Register your interest</h1> <div class='d-flex justify-content-center' style='width: 100%;min-width: auto;max-width: none;height: auto;min-height: auto;max-height: none;padding-top: 20px;padding-bottom: 20px;padding-right: 0px;padding-left: 0px;'> <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><img class='finalImage hovergrow' src='https://github.com/JeffreyWangDev/Murder-Mystery-invite/blob/main/assets/img/ticket.png?raw=true'></a></div> </div>"];
+pages = ['<header class="d-flex justify-content-end" style="height: 10px;padding-bottom: 0px;padding-right: 28px;padding-top: 8px;"> <p class="d-block d-flex justify-content-center align-items-start" style="color: var(--bs-dark-border-subtle);font-size: 30px;padding-left: 14px;">Best Experienced with Audio<br><br><br></p> </header> <div class="hovergrow d-flex justify-content-center align-items-center"> <div class="d-table-cell d-flex align-items-center justify-content-center align-items-center" style="--bs-body-color: #607183;"> <h1 class="text-center d-flex justify-content-center align-items-center" style="width: 70vw;height: 70vw;margin: 0px;background: var(--bs-dark-border-subtle);border-radius: 50%;--bs-body-color: #607183;border-style: none;border-color: #607183;color: #ded3b6;font-size: 10vw;min-width: 300px;min-height: 300px;max-height: 700px;max-width: 700px;" onclick="firstPage()"><br>ENTER HERE<br><br></h1> </div> </div>','<header class="happyMonkey" style="color: #433119;margin: 20px;padding: 5px;margin-top: 37px;"> <h1 id="firstText" class="d-flex justify-content-center align-items-center regText secondPageFirstText"> <br><span style="background-color: transparent;">Welcome, brave souls, to a world where shadows dance in the flickering candlelight, and every whisper carries a secret. </span><br><br></h1> </header> <div class="happyMonkey d-flex justify-content-center align-items-end justify-content-end align-items-end" style="max-width: none;min-height: initial;padding-top: 50px;margin-top: 10px;height: 36vw;margin-bottom: -35px;"> <div style="--bs-body-color: #607183;overflow: hidden;width: 70vw;height: 35vw;min-width: inherit;max-width: inherit;border-style: solid;border-color: #607183;min-height: 0px;"> <img src="https://github.com/JeffreyWangDev/Murder-Mystery-invite/blob/main/assets/img/first_image.png?raw=true" style="width: 100%;" alt="Image of a man sitting at a table"></div> <h1 class = "regText secondPageSecondText" id="secondText"> <span style="color: rgb(31, 25, 67);">You are cordially invited to an evening of deception, suspense, and mystery, where every guest is a suspect and every clue leads deeper into the labyrinth of murder.</span> </h1> </div> <footer class="secondPageFooter"> <h1 class="text-center" style="position: static;transform: translateY(0px);padding-top: 0px;margin-top: 0px;padding-bottom: 0px;font-family: Adamina, serif;"> <span style="color: rgb(75, 86, 146);">WELCOME FRIEND</span></h1> <div class="d-flex justify-content-center align-items-center" style="min-width: auto;max-width: none;max-height: none;min-height: auto;height: 10px;width: 100%;padding-right: 0px;margin: 10px;margin-right: 171px;margin-top: 30px;overflow: visible;"> <h1 id="nextButton" onclick="secondPage()" class="hovergrow border rounded d-flex justify-content-center align-items-center" data-bss-hover-animate="pulse" style="color: #1f1943;background: #606893;margin-bottom: 0px;border-radius: 20px;overflow: visible;font-size: 30px;padding-right: 8px;padding-left: 8px;width: 140px;height: 60px;box-shadow: inset 0px 0px 10px;"> <span style="color: rgb(222, 211, 182);">NEXT</span></h1> </div> </footer>',`<div class="d-flex justify-content-center" style="min-height: auto;max-height: none;max-width: none;min-width: auto;width: 100%;height: 100%;padding-bottom: 0px;margin-top: 40px;margin-bottom: 0px;"> <div class="justify-content-center" style="max-width: none;max-height: none;min-height: inherit;min-width: inherit;width: auto;height: auto;margin-top: 20px;margin-bottom: 20px;font-family: 'Happy Monkey', serif;"> <h1 id="firstText" class="regText fivePeopleFirsttext text-center justify-content-center"> <span style="color: rgb(0, 0, 0); background-color: transparent;">Join us as we embark on a journey into the heart of intrigue, where the line between friend and foe blurs, and the truth is but a flickering candle in the wind.</span></h1><img src="https://github.com/JeffreyWangDev/Murder-Mystery-invite/blob/main/assets/img/second_image.png?raw=true" class = "fivePeopleFirstImage" alt="Image of 5 people sitting around a table"> <h1 id="secondText" class="regText fivePeopleSecondtext text-center justify-content-center"> <span style="color: rgb(0, 0, 0); background-color: transparent;">Will you be the detective who unravels the tangled web of lies? Or will you be ensnared in the intricate machinations of those around you?</span> </h1> </div> </div> <div class="justify-content-center" style="width: 100%;min-width: auto;max-width: none;height: 100%;min-height: auto;max-height: none;padding-bottom: 0px;margin-top: 10px;margin-bottom: -22px;"> <h1 onclick="thirdPage()" id="nextButton" class="hovergrow border rounded d-flex justify-content-center align-items-center" data-bss-hover-animate="pulse" style="color: #1f1943;background: #606893;margin-bottom: 0px;border-radius: 20px;overflow: visible;font-size: 30px;padding-right: 8px;padding-left: 8px;width: 140px;height: 60px;margin-right: auto;margin-left: auto;box-shadow: inset 0px 0px 10px;"> <span style="color: rgb(222, 211, 182);">NEXT</span></h1> </div>`,'<div class="d-flex justify-content-center" style="min-height: auto;max-height: none;max-width: none;min-width: auto;width: 100%;height: 100%;padding-bottom: 0px;margin-top: 40px;margin-bottom: 0px;"> <div class="justify-content-center" style="max-width: none;max-height: none;min-height: inherit;min-width: inherit;width: auto;height: auto;margin-top: 20px;margin-bottom: 20px;"> <img class = "thirdPageFirstImage" src="https://github.com/JeffreyWangDev/Murder-Mystery-invite/blob/main/assets/img/third_image.png?raw=true" alt="Image of 5 people sitting around a table"> <h1 id="firstText" class="thirdPageFirstText regText text-center justify-content-center happyMonkey"> <span style="color: rgb(0, 0, 0); background-color: transparent;">Prepare yourself for an unforgettable evening of mystery and mayhem. The stage is set, the players assembled. The question remains: will you emerge victorious, or will you become just another victim in this deadly game of wits?</span></h1> </div> </div> <div class="justify-content-center" style="width: 100%;min-width: auto;max-width: none;height: 100%;min-height: auto;max-height: none;padding-bottom: 0px;margin-bottom: -22px;margin-top: 48px;"> <h1 onclick="lastPage()" id="nextButton" class="hovergrow border rounded d-flex justify-content-center align-items-center" data-bss-hover-animate="pulse" style="color: #1f1943;background: #606893;margin-bottom: 0px;border-radius: 20px;overflow: visible;font-size: 30px;padding-right: 8px;padding-left: 8px;width: 140px;height: 60px;margin-right: auto;margin-left: auto;box-shadow: inset 0px 0px 10px;"> <span style="color: rgb(222, 211, 182);">NEXT</span></h1> </div>',"<div style='z-index:10;pointer-events: none; position: fixed;background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvpskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLyynl4X4RinF793Oz+BU0saXtUHrVBFT/DnA3ctNPoGbs4hRIjTok8i+algT1lTHi4SxFvONKNrgQFAq2/gFnWMXgwffgYMJpiKYkmW3tTg3ZQ9Jq+f8XN+A5eeUKHWvJWJ2sgJ1Sop+wwhqFVijqWaJhwtD8MNlSBeWNNWTa5Z5kPZw5+LbVT99wqTdx29lMUH4OIG/D86ruKEauBjvH5xy6um/Sfj7ei6UUVk4AIl3MyD4MSSTOFgSwsH/QJWaQ5as7ZcmgBZkzjjU1UrQ74ci1gWBCSGHtuV1H2mhSnO3Wp/3fEV5a+4wz//6qy8JxjZsmxxy5+4w9CDNJY09T072iKG0EnOS0arEYgXqYnXcYHwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==&quot;) top / auto repeat;width: 100%;min-width: auto;max-width: none;height: 100%;max-height: none;min-height: auto;overflow: visible;padding-top: 0px;margin-top: -50px;'> </div> <div style='width: 100%;max-width: none;min-width: auto;min-height: auto;max-height: none;height: auto;'> <h1 class='text-center adamina finalFirstHeading'>Name of the event here</h1> <p class='text-center adamina finalSecondHeading'>BMWB'S SENIOR APPRECIATION MURDER MYSTERY PARTY</p> <p class='text-center adamina finalThirdHeading'>July 7 2024</p> <div class='happyMonkey finalLotsOfText'> <h1 class='actor finalLotsOfTextBig'>Dear Detective,</h1> <p>You are cordially invited to an evening of mystery, intrigue, and fine dining at our exclusive Murder Mystery Dinner Party, hosted on [date] at a clandestine location in [city].</p> <p>Step into the shadows of deception and suspense as you join a select group of guests for an unforgettable evening of sleuthing and suspense. As the moon casts its eerie glow over the gathering, prepare to immerse yourself in a world where secrets lurk behind every corner and every guest is a potential suspect.</p> <p>Upon arrival, you will be greeted with a glass of champagne and ushered into a realm where nothing is as it seems. From the moment you step through the door, you'll find yourself entangled in a web of lies, deceit, and hidden agendas.</p> <p>As you mingle with fellow detectives and suspects alike, indulge in a sumptuous feast fit for the most discerning palate. But beware – for amongst the laughter and conversation, a sinister plot is unfolding, and only your keen detective skills can unravel the truth.</p> <p>Throughout the evening, you will have the opportunity to interrogate suspects, examine clues, and piece together the puzzle of a heinous crime. With every revelation and unexpected twist, the tension mounts, leading to a thrilling climax where the culprit will finally be unmasked.</p> <p>So dust off your magnifying glass, sharpen your wits, and prepare for an evening of suspense and surprise at The [Event Name]: A Murder Mystery Dinner Party. Your presence is requested, your detective skills essential, and your evening promises to be anything but ordinary.</p> <p>We eagerly anticipate your RSVP and look forward to seeing you on the night when secrets will be revealed, and justice will prevail.</p> </div> </div> <div style='pointer-events: auto; width: 100%;min-width: auto;max-width: none;height: auto;min-height: auto;max-height: none;background: #8097b1;padding-top: 30px;padding-bottom: 30px;margin-bottom: 0px;padding-left: 0px;padding-right: 0px;'> <h1 class='text-center finalFirstHeading actor' style='color: rgb(105,92,86)'>Register your interest</h1> <div class='d-flex justify-content-center' style='width: 100%;min-width: auto;max-width: none;height: auto;min-height: auto;max-height: none;padding-top: 20px;padding-bottom: 20px;padding-right: 0px;padding-left: 0px;'> <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><img class='finalImage hovergrow' src='https://github.com/JeffreyWangDev/Murder-Mystery-invite/blob/main/assets/img/ticket.png?raw=true'></a></div> </div>"];
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("body").innerHTML = pages[0];
